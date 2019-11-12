@@ -1,0 +1,54 @@
+<div class="header"></div>
+
+<div id="matserbox">
+
+  <div id="box1" class="box">
+          <span>
+            <img src="../assets/images/logo.png" alt/>
+          </span>
+    <p
+      style=
+        "color: gray;
+              font-weight: bold;
+              margin-left: 30px;margin-top: 30px;font-size: 16px;
+              line-height: 24px;">{{fullname}}</p>
+    <h1 class="legacy-profile-info-event-type-name">{{meetingtime}}</h1>
+    <i class="material-icons" style="margin-right: 10px">access_time</i>{{minute}}
+
+  </div>
+
+  <div id="box2" class="box">
+
+    <div id="mat-calendar" class="calendarbox">
+      <h2 class="spotpicker-title">{{title}}</h2>
+      <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+        <div class="mat-card" fxFlex="20%">
+          <mat-calendar
+            [selected]="selectedDate"
+            [minDate]="minDate"
+            [dateFilter]="myDateFilter"
+            (selectedChange)="onSelect($event)"
+            (click)="onclick()" >
+          </mat-calendar>
+        </div>
+      </div>
+    </div>
+
+    <div id="task" class="calendarbox" *ngIf="!display">
+      <div class="hd">hello</div>
+      <div class="taskheader">
+        <h5 *ngIf="display" style="font-size: 14px;">{{currentnamedate}}  {{currentnamemonth}} {{currentdate}}</h5>
+        <h4 *ngIf="!display" style="font-size: 14px;">{{nomdujour}}  {{mois}} {{jour}}</h4>
+
+      </div>
+      <div class="taskcontent">
+        <app-task></app-task>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="footer"></div>
+

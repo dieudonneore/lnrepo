@@ -1,0 +1,114 @@
+.header{
+  width: 1500px;
+  height: 30px;
+
+}
+#matserbox{
+  width: 1300px;
+  height: 700px;
+  color: white;
+  background-color: whitesmoke;
+  margin-left: 153px;
+  border:solid 1px whitesmoke;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px 0px gray;
+}
+
+#box1{
+  width: 400px;
+  height: 695px;
+  background-color: white;
+  border:solid 1px lightgray;
+  border-bottom: 0px;
+  border-top:0px;
+  border-left: 0px;
+  color:black;
+}
+.legacy-profile-info-event-type-name{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-left: 30px;
+  margin-top:-3px;
+}
+.material-icons{
+  margin-left: 30px;
+  margin-top:3px;
+}
+span{
+  margin-left: 30px;
+}
+img{
+  margin-top:30px;
+  width: 75px;
+  height: 75px;
+}
+
+#box2{
+  width: 898px;
+  height: 695px;
+  background-color: white;
+}
+#mat-calendar{
+  width: 600px;
+  height: 695px;
+  background-color: white;
+  color:black;
+}
+
+.mat-card{
+  width: 550px;
+  margin-top:30px;
+  font-weight: bold;
+  border-style: none !important;
+}
+mat-calendar{
+  background-color: white;
+  border-style: none !important;
+  border-color: white;
+}
+.spotpicker-title{
+  margin-top: 25px;
+  margin-left: 40px;
+  font-size: 20px;
+}
+#task{
+  width: 297px;
+  height: 695px;
+  background-color: white;
+  border: solid 1px white;
+  border-radius:2px;
+}
+.hd{
+  width: 295px;
+  height: 120px;
+  background-color: white;
+}
+.taskheader{
+  width: 295px;
+  height: 40px;
+  background-color: white;
+  color:black;
+}
+.taskcontent{
+  width: 295px;
+  height: 440px;
+  background-color: white;
+  overflow-y: scroll;
+}
+
+.calendarbox{
+  display:block;
+  float:left;
+}
+
+.box{
+  display: block;
+  float:left;
+}
+
+.footer{
+  width: 1500px;
+  height: 20px;
+
+}

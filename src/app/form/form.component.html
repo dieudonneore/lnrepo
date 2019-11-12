@@ -1,0 +1,46 @@
+<div class="container-fluid">
+  <h2>Enter Details</h2>
+  <form [formGroup]="registrationforms">
+    <div class="form-group">
+      <label>Name*</label>
+      <input
+        [class.is-invalid]="registrationforms.get('name').invalid && registrationforms.get('name').touched"
+        formControlName="name" type="text" class="form-control">
+      <small class="text-danger"
+             [class.d-none]="registrationforms.get('name').valid
+             || registrationforms.get('name').untouched"> Name is required</small>
+    </div>
+    <div class="form-group">
+      <label>Email*</label>
+      <input
+        [class.is-invalid]="registrationforms.get('email').invalid && registrationforms.get('name').touched"
+        formControlName="email" type="email" class="form-control">
+    </div>
+    <p (click)="showhide()">
+      <button type="button" class="btn btn-outline-primary">Add Guests</button>
+    </p>
+    <div class="form-group" *ngIf="show">
+      <label>Guest Email(s)</label>
+      <input
+        [class.is-invalid]="registrationforms.get('Guestemail').invalid && registrationforms.get('name').touched"
+        formControlName="Guestemail" type="text" class="form-control" id="jaune">
+    </div>
+    <div class="form-group">
+      <label>Phone Number*</label>
+      <input
+        [class.is-invalid]="registrationforms.get('Phonenumber').invalid && registrationforms.get('name').touched"
+        formControlName="Phonenumber" type="tel" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label>skill framework*</label>
+      <input
+        [class.is-invalid]="registrationforms.get('skill').invalid && registrationforms.get('name').touched"
+        formControlName="skill" type="text" class="form-control">
+    </div>
+
+    <button class="btn btn-primary" type="submit">Schedule Event</button>
+
+  </form>
+
+</div>
